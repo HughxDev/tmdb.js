@@ -237,7 +237,13 @@ TmdbCall.prototype.Movie = function tmdbMovie( id ) {
   this.allowedParams = [ 'page', 'language', 'include_adult', 'year' ];
 
   F.prototype.getId = function tmdbMovieGetId() {
-    return this.getCall().response.results[0].id;
+    var results = this.getCall().response.results;
+
+    if ( !!results.length && results[0].hasOwnProperty( 'id' ) ) {
+      return results[0].id;
+    }
+
+    return false;
   };
 
   F.prototype.getImages = function tmdbMovieGetImages() {
