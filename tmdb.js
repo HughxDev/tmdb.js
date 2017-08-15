@@ -86,29 +86,29 @@ var
   }, false);
 */
 
-var ajaxCall = function ajaxCall( request, callback, async ) {
-  var xhr = new XMLHttpRequest();
+// var ajaxCall = function ajaxCall( request, callback, async ) {
+//   var xhr = new XMLHttpRequest();
 
-  async = !!async;
+//   async = !!async;
 
-  xhr.open( "GET", request, async );
+//   xhr.open( "GET", request, async );
 
-  xhr.onload = function ( event ) {
-    if ( xhr.readyState === 4 ) {
-      if ( xhr.status === 200 ) {
-        callback.apply( null, [ xhr ] );
-      } else {
-        console.error( xhr.statusText );
-      }
-    }
-  };
+//   xhr.onload = function ( event ) {
+//     if ( xhr.readyState === 4 ) {
+//       if ( xhr.status === 200 ) {
+//         callback.apply( null, [ xhr ] );
+//       } else {
+//         console.error( xhr.statusText );
+//       }
+//     }
+//   };
 
-  xhr.onerror = function ( event ) {
-    console.error( xhr.statusText );
-  };
+//   xhr.onerror = function ( event ) {
+//     console.error( xhr.statusText );
+//   };
 
-  xhr.send( null );
-};
+//   xhr.send( null );
+// };
 
 var TmdbCall = function TmdbCall( key, secure )
 {
