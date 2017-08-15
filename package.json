@@ -6,8 +6,5 @@
   "repository": "https://github.com/hguiney/tmdb.js.git",
   "author": "Hugh Guiney <hugh@hughguiney.com>",
   "license": "Unlicense",
-  "dependencies": {
-    "webcomponentsjs": "^1.0.2"
-  },
   "private": false
 }
