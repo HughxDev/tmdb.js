@@ -1,0 +1,7 @@
+{
+  "laxcomma": true,
+  "smarttabs": true,
+  "browser": true,
+  "strict": "global",
+  "devel": true
+}

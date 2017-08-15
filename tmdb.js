@@ -1,10 +1,9 @@
-/*jshint laxcomma: true, smarttabs: true */
 /*
   TMDb API Wrapper v0.1
   by Hugh Guiney
   License: LGPL | MIT
 */
-(function () {
+// (function () {
 "use strict";
 
 var
@@ -288,7 +287,7 @@ TmdbCall.prototype.Movie = function tmdbMovie( id ) {
     return this.getImageUrl( size, 'backdrop' );
   };
 
-  F.prototype.getPosterUrl = function tmdbMovieGetPosterUrl( ) {
+  F.prototype.getPosterUrl = function tmdbMovieGetPosterUrl( size ) {
     return this.getImageUrl( size, 'poster' );
   };
 
@@ -348,4 +347,4 @@ TmdbCall.prototype.Search = function tmdbSearch( type, query, params ) {
 };
 
 //TmdbCall.prototype.getMovie = function tmdbGetMovie() {};
-}());
+// }());
