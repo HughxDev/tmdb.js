@@ -273,7 +273,7 @@ TmdbCall.prototype.Movie = function tmdbMovie( id ) {
 
   F.prototype.getCredits = function tmdbMovieGetCredits() {
     this.endpoint += '/credits';
-    return this.getCall();
+    return this.getResults();
   };
 
   return new F();
