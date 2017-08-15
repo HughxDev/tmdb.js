@@ -274,7 +274,7 @@ TmdbCall.prototype.Movie = function tmdbMovie( id ) {
   };
 
   F.prototype.getRuntime = function tmdbMovieGetRuntime() {
-    console.log( this.getCall() );
+    // console.log( this.getCall() );
     return this.getResult().runtime;
   };
 

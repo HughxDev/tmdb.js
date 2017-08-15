@@ -192,31 +192,31 @@ function ajaxCall( url, callback, async )
   {
     if ( (xhr.readyState < 4) || (xhr.status !== 200) )
     {
-      console.log( 'not ready', xhr.readyState );
+      // console.log( 'not ready', xhr.readyState );
       return;
     }
 
     if ( xhr.readyState === 4 )
     {
-      console.log( callback );
+      // console.log( callback );
 
       response = callback( xhr );
-      console.log( 'callback called', response );
+      // console.log( 'callback called', response );
     }
   }
 
-  console.log( 'xhr', xhr );
-  console.log( 'url', url );
-  console.log( 'async', async );
+  // console.log( 'xhr', xhr );
+  // console.log( 'url', url );
+  // console.log( 'async', async );
 
   xhr.open( 'GET', url, async );
   xhr.send( null );
 
   if ( isset( response ) ) {
-    console.log('response', response);
+    // console.log('response', response);
     return response;
   } else {
-    console.log('no response', response);
+    // console.log('no response', response);
   }
 }
 
@@ -326,8 +326,8 @@ function webkitBugStatus( id ) {
       , bugStatus
     ;
 
-    console.log( 'body', body );
-    console.log( 'body[1]', body[1] );
+    // console.log( 'body', body );
+    // console.log( 'body[1]', body[1] );
 
     div.innerHTML = body[1];
 
