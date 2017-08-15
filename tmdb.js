@@ -276,6 +276,14 @@ TmdbCall.prototype.Movie = function tmdbMovie( id ) {
     return this.getResult();
   };
 
+  F.prototype.getCast = function tmdbMovieGetCast() {
+    return this.getCredits().cast;
+  };
+
+  F.prototype.getCrew = function tmdbMovieGetCrew() {
+    return this.getCredits().crew;
+  };
+
   return new F();
 };
 
