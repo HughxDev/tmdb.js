@@ -271,6 +271,11 @@ TmdbCall.prototype.Movie = function tmdbMovie( id ) {
     return '<img src="' + this.getImageUrl( size, 'backdrop' ) + '" height="' + this.getResult().backdrops[0].height + '" />';
   };
 
+  F.prototype.getCredits = function tmdbMovieGetCredits() {
+    this.endpoint += '/credits';
+    return this.getCall();
+  };
+
   return new F();
 };
 
